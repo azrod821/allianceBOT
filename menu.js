@@ -60,7 +60,7 @@ client.on('message', message => {
 
   client.on('message', message => {
     if (message.content ===  prefix+'participe') {
-      member.addRole(838042414711177247).catch(console.error);
+      member.addRole("838042414711177247").catch(console.error);
     }
     });
 client.login(process.env.TOKEN);
