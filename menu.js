@@ -27,7 +27,7 @@ client.on("message", message =>{
             });
         }
         else{
-            message.reply("pdst")
+          message.channel.send("pdst")
         }
 
     }
