@@ -5,7 +5,7 @@ const { Client, MessageEmbed } = require('discord.js');
 const prefix = ".";
 client.on('ready', () => {
   console.log(`conecter ${client.user.tag}!`);
-  client.user.setActivity("En maintenance", { type:'STREAMING'}).catch(console.error);
+  client.user.setActivity("Crée des Alliances", { type:'PLAYING'}).catch(console.error);
 });
 //////////////////////////////////////////////////////////////////////////////////////////////Musique//////////////////////////////////////////////////////////////////////////////////////////////
 client.on("message", message =>{
