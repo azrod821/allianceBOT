@@ -47,15 +47,16 @@ client.on('message', message => {
 //////////////////////////////////////////////////////////////////////////////////////////////Alliance calendrier//////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('message', message => {
-    if (message.content === prefix+'calendrier') {
-      const embed = new MessageEmbed()
-        .setTitle('Calendrier des alliances')
-        .setColor(0xff8000)
-        .setDescription('Aucune alliance de prévue')
-        .setThumbnail('https://cdn.discordapp.com/attachments/140551113525952512/839565251674112000/pp.jpg')
-      message.channel.send(embed);
-    }
-  });
+  if (message.content === prefix+'calendrier') {
+    const embed = new MessageEmbed()
+      .setTitle('Calendrier des alliances')
+      .setColor(0xff8000)
+      .setDescription('Aucune alliance de prévue')
+      .setThumbnail('https://cdn.discordapp.com/attachments/140551113525952512/839565251674112000/pp.jpg')
+    message.channel.send(embed);
+  }
+});
+
 
 
   client.on('message', message => {
